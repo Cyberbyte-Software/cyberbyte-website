@@ -12,7 +12,7 @@ module.exports = {
       white: colors.white,
       gray: colors.coolGray,
       primary: {
-        DEFAULT: '#ed1265'
+        DEFAULT: '#ff162d'
       },
       secondary: {
         DEFAULT: '#ee2924'
