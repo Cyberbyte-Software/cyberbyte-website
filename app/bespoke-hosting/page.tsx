@@ -1,18 +1,11 @@
-import Footer from "../components/Footer";
-import PageIllustration from "../components/PageIllustration";
-import Header from "../components/Header";
-import {NextSeo} from "next-seo";
 import React from "react";
-import HeroFeatures from "../components/HeroFeatures";
-import Features from "../components/Features";
+import HeroFeatures from "../../components/HeroFeatures";
+import PageIllustration from "../../components/PageIllustration";
+import Features from "../../components/Features";
 
 function BespokeHosting() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Bespoke Hosting" />
-      <Header />
-
-      <main className="flex-grow">
+     <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -45,8 +38,6 @@ function BespokeHosting() {
           ]}
         />
       </main>
-      <Footer />
-    </div>
   );
 }
 

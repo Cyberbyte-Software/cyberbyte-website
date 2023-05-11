@@ -1,16 +1,14 @@
-import Footer from "../components/Footer";
-import PageIllustration from "../components/PageIllustration";
-import Header from "../components/Header";
-import {NextSeo} from "next-seo";
 import React from "react";
+import {Metadata} from "next";
+import PageIllustration from "../../components/PageIllustration";
+
+const metadata: Metadata = {
+  title: "Website Development"
+}
 
 function WebsiteDevelopment() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Website Development" />
-      <Header />
-
-      <main className="flex-grow">
+    <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -23,8 +21,6 @@ function WebsiteDevelopment() {
           description="Our team work closely with a number of clients to successfully deliver projects"
         />*/}
       </main>
-      <Footer />
-    </div>
   );
 }
 

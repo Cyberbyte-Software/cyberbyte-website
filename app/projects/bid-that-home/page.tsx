@@ -1,17 +1,16 @@
-import Footer from "../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
-import bth from "../../images/projects/bth.png";
+import bth from "../../../images/projects/bth.png";
+import PageIllustration from "../../../components/PageIllustration";
+import HeroFeatures from "../../../components/HeroFeatures";
+import FeaturesZigzag from "../../../components/FeaturesZigzag";
+import type {Metadata} from "next";
+
+const metadata: Metadata = {
+  title: "Bid That Home"
+}
 
 function BidThatHome() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Bid That Home" />
-      <Header />
       <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
@@ -42,8 +41,6 @@ function BidThatHome() {
           ]}
         />
       </main>
-      <Footer />
-    </div>
   );
 }
 

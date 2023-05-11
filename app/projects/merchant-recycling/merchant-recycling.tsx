@@ -1,23 +1,22 @@
-import Footer from "../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
-import Cta from "../../components/Cta";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
-import merchantProduct from "../../images/projects/merchant-recycling/website-product.jpg";
-import adminProduct from "../../images/projects/merchant-recycling/admin-product.jpg";
-import adminConditions from "../../images/projects/merchant-recycling/admin-conditions-slim.jpg";
-import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
-import cloveHomepage from "../../images/projects/merchant-recycling/clove-home.png";
+import PageIllustration from "../../../components/PageIllustration";
+import HeroFeatures from "../../../components/HeroFeatures";
+import Cta from "../../../components/Cta";
+import FeaturesZigzag from "../../../components/FeaturesZigzag";
+import merchantProduct from "../../../images/projects/merchant-recycling/website-product.jpg";
+import adminProduct from "../../../images/projects/merchant-recycling/admin-product.jpg";
+import adminConditions from "../../../images/projects/merchant-recycling/admin-conditions-slim.jpg";
+import camoradaHomepage from "../../../images/projects/merchant-recycling/camorada-home.jpg";
+import cloveHomepage from "../../../images/projects/merchant-recycling/clove-home.png";
+import {Metadata} from "next";
+
+const metadata: Metadata = {
+  title: "Recycling Merchant Websites"
+}
 
 function MerchantPlatform() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Recycling Merchant Websites" />
-      <Header />
-      <main className="flex-grow">
+    <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -85,8 +84,6 @@ function MerchantPlatform() {
           buttonInternal={true}
         />
       </main>
-      <Footer />
-    </div>
   );
 }
 

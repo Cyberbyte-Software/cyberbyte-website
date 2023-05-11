@@ -38,13 +38,6 @@ function Footer() {
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/projects/landing-pages">
-                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                        Landing Pages
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mb-1">
                     <Link href="/projects/living-pillars">
                       <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                         Living Pillars

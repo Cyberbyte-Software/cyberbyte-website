@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
 import {Autoplay} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
 export type SliderImage = {
   url: StaticImageData;

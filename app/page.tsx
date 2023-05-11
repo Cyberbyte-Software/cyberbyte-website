@@ -1,26 +1,20 @@
-import Footer from "../components/Footer";
 import React from "react";
 import HeroHome from "../components/HeroHome";
 import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
-import {LogoJsonLd, NextSeo} from "next-seo";
 import Cta from "../components/Cta";
 import cyberworks from "../images/projects/cyberworks/dashboard.png";
 import recycling from "../images/projects/merchant-recycling/clove-home.png";
 import car from "../images/projects/car.png";
+import type {Metadata} from "next";
+
+const metadata: Metadata = {
+  description: "Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects"
+}
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo description="Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects" />
-      <LogoJsonLd
-        logo="https://cyberbyte.software/images/logo-square.png"
-        url="https://cyberbyte.software"
-      />
-
-      {/*<Header />*/}
-
-      <main className="flex-grow">
+    <main className="flex-grow">
         <HeroHome />
         <Features
           features={[
@@ -181,7 +175,5 @@ export default function Home() {
           buttonInternal={true}
         />
       </main>
-      <Footer />
-    </div>
   );
 }

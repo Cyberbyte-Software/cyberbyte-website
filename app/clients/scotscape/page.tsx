@@ -1,17 +1,15 @@
-import Footer from "../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
-import Cta from "../../components/Cta";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
+import PageIllustration from "../../../components/PageIllustration";
+import HeroFeatures from "../../../components/HeroFeatures";
+import Cta from "../../../components/Cta";
+import {Metadata} from "next";
+
+const metadata: Metadata = {
+  title: "Working with Scotscape"
+}
 
 function Scotscape() {
-  return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Working with Scotscape" />
-      <Header />
-      <main className="flex-grow">
+  return (<main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -30,8 +28,6 @@ function Scotscape() {
           buttonLink="https://www.scotscape.co.uk/"
         />
       </main>
-      <Footer />
-    </div>
   );
 }
 

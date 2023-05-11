@@ -1,25 +1,22 @@
-import Footer from "../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
-import Stats from "../../components/Stats";
-import Cta from "../../components/Cta";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
-import player from "../../images/projects/cyberworks/player.png";
-import dashboard from "../../images/projects/cyberworks/dashboard.png";
-import permissions from "../../images/projects/cyberworks/permissions.png";
+import PageIllustration from "../../../components/PageIllustration";
+import HeroFeatures from "../../../components/HeroFeatures";
+import Stats from "../../../components/Stats";
+import Cta from "../../../components/Cta";
+import FeaturesZigzag from "../../../components/FeaturesZigzag";
+import player from "../../../images/projects/cyberworks/player.png";
+import dashboard from "../../../images/projects/cyberworks/dashboard.png";
+import permissions from "../../../images/projects/cyberworks/permissions.png";
+import {Metadata} from "next";
+
+const metadata: Metadata = {
+  title: "Cyberworks 3",
+  description: "Cyberworks 3 is the best way to manage your Arma 3 Life Server"
+}
 
 function CyberworksThree() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo
-        title="Cyberworks 3"
-        description="Cyberworks 3 is the best way to manage your Arma 3 Life Server"
-      />
-      <Header />
-      <main className="flex-grow">
+    <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -90,8 +87,6 @@ function CyberworksThree() {
           buttonLink="https://github.com/Cyberbyte-Studios/CyberWorks-3"
         />
       </main>
-      <Footer />
-    </div>
   );
 }
 

@@ -1,9 +1,6 @@
-import Footer from "../../components/Footer";
 import React from "react";
 import CaseStudies from "../../components/CaseStudies";
 import PageIllustration from "../../components/PageIllustration";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
 import cyberworks from "../../images/projects/cyberworks/dashboard.png";
 import cyberworksOriginal from "../../images/projects/cyberworks/original.jpg";
 import pillar from "../../images/projects/pillar.jpg";
@@ -11,14 +8,15 @@ import mineathon from "../../images/projects/mineathon.jpg";
 import car from "../../images/projects/car.png";
 import bth from "../../images/projects/bth.png";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
-import enveriline from "../../images/projects/landing-pages/enveriline.jpg";
+import {Metadata} from "next";
+
+const metadata: Metadata = {
+  title: "Our Projects"
+}
 
 function Projects() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Our Projects" />
-      <Header />
-      <main className="flex-grow">
+    <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -36,13 +34,6 @@ function Projects() {
               description:
                 "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
               link: "/projects/merchant-recycling",
-            },
-            {
-              image: enveriline,
-              title: "Static Websites and Landing Pages",
-              description:
-                "Need a static website or landing page for your company? We make websites of various designs to fit any specification.",
-              link: "/projects/landing-pages",
             },
             {
               image: cyberworks,
@@ -100,8 +91,6 @@ function Projects() {
           ]}
         />
       </main>
-      <Footer />
-    </div>
   );
 }
 

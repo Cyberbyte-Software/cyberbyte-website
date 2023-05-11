@@ -1,18 +1,16 @@
-import Footer from "../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
-import Stats from "../../components/Stats";
-import Cta from "../../components/Cta";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
+import type {Metadata} from "next";
+import Cta from "../../../components/Cta";
+import Stats from "../../../components/Stats";
+import HeroFeatures from "../../../components/HeroFeatures";
+import PageIllustration from "../../../components/PageIllustration";
 
+const metadata: Metadata = {
+  title: "Bid That Home"
+}
 function CompareAndRecycle() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Compare and Recycle" />
-      <Header />
-      <main className="flex-grow">
+    <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -49,8 +47,6 @@ function CompareAndRecycle() {
           buttonLink="https://www.compareandrecycle.co.uk/"
         />
       </main>
-      <Footer />
-    </div>
   );
 }
 
