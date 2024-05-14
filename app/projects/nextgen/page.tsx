@@ -2,8 +2,14 @@ import React from "react";
 import HeroFeatures from "../../../components/HeroFeatures";
 import Cta from "../../../components/Cta";
 import FeaturesZigzag from "../../../components/FeaturesZigzag";
+import network from "../../../images/projects/nextgen/network.jpeg";
+import security from "../../../images/projects/nextgen/security.jpeg";
+import updates from "../../../images/projects/nextgen/updates.jpeg";
+import watering from "../../../images/projects/nextgen/watering.jpeg";
 import pillar from "../../../images/projects/living-pillars/pillar.jpg";
-import dashboard from "../../../images/projects/scotscape/dashboard.png";
+import meshd from "../../../images/projects/nextgen/mesh.jpeg";
+import solar from "../../../images/projects/nextgen/solar.jpeg";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -30,7 +36,7 @@ function NextGenPlants() {
                   "\n Our units connect over multiple LTE-M bands, enabling them to function across the EU and America.\n" +
                   "\n" +
                   "By partnering with an IoT SIM provider, we are able to use SIM cards that can roam globally across various networks, picking the provider with the strongest signal. This provides our devices with reliable LTE connectivity without the hassle of individual contracts with multiple network providers.\n",
-              images: [{ url: dashboard, alt: "Dashboard" }],
+              images: [{ url: network, alt: "Dashboard" }],
               items: [
                 "Future Proof",
                 "Global Sims",
@@ -43,7 +49,7 @@ function NextGenPlants() {
               title: "Flexible Power Sources",
               description:
                   "Our sensor units feature specially selected components optimised for lower power draw. Resulting in reduced power consumption and provides the ability for devices to be powered from a variety of sources such as batteries, solar or even hardwired.",
-              images: [{ url: dashboard, alt: "Flexible Power" }],
+              images: [{ url: solar, alt: "Flexible Power" }],
               items: [
                 "Battery",
                 "Solar",
@@ -54,7 +60,7 @@ function NextGenPlants() {
               title: "Bluetooth Mesh Peripherals",
               description:
                   "Our platform is built around a master unit with a bluetooth mesh of peripherals which enables easy placement of sensors within a deployment without the need for cabling.",
-              images: [{ url: dashboard, alt: "Bluetooth Mesh" }],
+              images: [{ url: meshd, alt: "Bluetooth Mesh" }],
             },
             {
                 right:true,
@@ -63,7 +69,7 @@ function NextGenPlants() {
                     "Leveraging both Arm TrustZone and Arm CryptoCell-310 to achieve PSA Level 2 certification. All communication with the master is transmitted via DTLS, ensuring data integrity and device security.\n" +
                     "\n" +
                     "Our devices are equipped with secure boot mechanisms to prevent unauthorised firmware updates and ensure only trusted software runs on our units.\n",
-                images: [{ url: dashboard, alt: "Bluetooth Mesh" }],
+                images: [{ url: security, alt: "Bluetooth Mesh" }],
                 items: [
                     "PSA Level 2",
                     "ARM TrustZone",
@@ -75,7 +81,7 @@ function NextGenPlants() {
               title: "Remote Updates & Configuration",
               description:
                   "Our units check with our platform for updates to their firmware or configuration. This allows our devices to improve overtime with new firmware features and additional capabilities without requiring on-site intervention from a technician. Issues can be remotely diagnosed and rectified quickly and securely, reducing costs and increasing longevity.",
-              images: [{ url: dashboard, alt: "Remote updates" }],
+              images: [{ url: updates, alt: "Remote updates" }],
                 items: [
                     "Remote Diagnostics",
                     "Remote Updates",
@@ -91,7 +97,7 @@ function NextGenPlants() {
                       title: "Watering Schedules",
                       description:
                           "Our management interface allows you to build watering schedules for an entire site as well as customise them per unit. These schedules are downloaded onto the master unit and will operate on each device even if it becomes disconnected from the network.",
-                      images: [{ url: dashboard, alt: "Dashboard" }],
+                      images: [{ url: watering, alt: "Dashboard" }],
                       items: [
                           "Seasonal Schedules",
                           "Custom Duration",
@@ -102,7 +108,7 @@ function NextGenPlants() {
                       title: "Detailed Device Overview",
                       description:
                           "Each device has its own overview dashboard. On this page you can view any alerts issued by the device as well as a summary of it’s recent actions. It also contains a number of graphs for the available metrics.",
-                      images: [{ url: dashboard, alt: "Device Overview" }],
+                      images: [{ url: watering, alt: "Device Overview" }],
                       items: [
                           "Temperature and Humidity",
                           "Tank Level",
