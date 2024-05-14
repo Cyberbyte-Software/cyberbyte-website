@@ -29,10 +29,10 @@ export default function Projects() {
           },
           {
             image: pillar,
-            title: "Living Pillars",
+            title: "Next Generation Plant Monitoring",
             description:
-              "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
-            link: "/projects/living-pillars",
+              "Building atop our previous units deployed across the UK, we are now working on a next generation monitoring system.",
+            link: "/projects/nextgen",
           },
           {
             image: car,
