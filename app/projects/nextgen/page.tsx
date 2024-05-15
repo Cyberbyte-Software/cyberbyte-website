@@ -6,9 +6,11 @@ import network from "../../../images/projects/nextgen/network.jpeg";
 import security from "../../../images/projects/nextgen/security.jpeg";
 import updates from "../../../images/projects/nextgen/updates.jpeg";
 import watering from "../../../images/projects/nextgen/watering.jpeg";
-import pillar from "../../../images/projects/living-pillars/pillar.jpg";
 import meshd from "../../../images/projects/nextgen/mesh.jpeg";
 import solar from "../../../images/projects/nextgen/solar.jpeg";
+import greenwall from "../../../images/projects/nextgen/greenwall.jpeg";
+import dashboard from "../../../images/projects/nextgen/dashboard.jpeg";
+
 
 import type { Metadata } from "next";
 
@@ -22,8 +24,8 @@ function NextGenPlants() {
       <main className="flex-grow">
         <HeroFeatures
           title="Next Generation Plant Monitoring"
-          images={[{ url: pillar, alt: "Next Generation Plant Monitoring" }]}
-          description="Our skilled team of software developers and engineers collaborated to deliver our clients sensors that have ensured plants remain correctly watered in all conditions, removing the need for manual care and allowing clients to view the current plant conditions via a live dashboard remotely."
+          images={[{ url: greenwall, alt: "Next Generation Plant Monitoring" }]}
+          description="Our next generation plant monitoring platform is an evolutionary step forward in plant monitoring systems. Designed to efficiently oversee a range of urban greening installations; such as green walls and living pillars."
         />
         <FeaturesZigzag
           title="Hardware Features"
@@ -108,7 +110,7 @@ function NextGenPlants() {
                       title: "Detailed Device Overview",
                       description:
                           "Each device has its own overview dashboard. On this page you can view any alerts issued by the device as well as a summary of it’s recent actions. It also contains a number of graphs for the available metrics.",
-                      images: [{ url: watering, alt: "Device Overview" }],
+                      images: [{ url: dashboard, alt: "Device Overview" }],
                       items: [
                           "Temperature and Humidity",
                           "Tank Level",
