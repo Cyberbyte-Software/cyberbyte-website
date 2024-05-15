@@ -9,7 +9,7 @@ import watering from "../../../images/projects/nextgen/watering.jpeg";
 import meshd from "../../../images/projects/nextgen/mesh.jpeg";
 import solar from "../../../images/projects/nextgen/solar.jpeg";
 import greenwall from "../../../images/projects/nextgen/greenwall.jpeg";
-import dashboard from "../../../images/projects/nextgen/dashboard.jpeg";
+import dashboard from "../../../images/projects/nextgen/dashboard-dark.jpg";
 
 
 import type { Metadata } from "next";
