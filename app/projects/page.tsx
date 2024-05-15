@@ -12,6 +12,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Projects",
+  description: "Our team has worked on a wide variety of projects. As specialists in both software and hardware solutions we work closely with each client to help achieve there project goals.",
 };
 
 export default function Projects() {
@@ -55,6 +56,13 @@ export default function Projects() {
             description:
               "We built a part management system for a recycling merchant that tracks devices individually, organising what replacement parts are required for each of them to be refurbished.",
             link: "/projects/handtec-part-management",
+          },
+          {
+            image: pillar,
+            title: "Living Pillars",
+            description:
+              "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
+            link: "/projects/living-pillars",
           },
           {
             image: priceTracking,
