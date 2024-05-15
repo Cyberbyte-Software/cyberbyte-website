@@ -7,6 +7,7 @@ import handtec from "../../images/projects/handtec/handtec.png";
 import cleanRoom from "../../images/projects/clean-room/clean-room.jpg";
 import handtecHomepage from "../../images/projects/merchant-recycling/home/handtec.png";
 import priceTracking from "../../images/projects/price-tracking/grid.png";
+import greenwall from "../../images/projects/plant-monitoring/greenwall.jpeg";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,11 +29,11 @@ export default function Projects() {
             link: "/projects/recycling-merchant-websites",
           },
           {
-            image: pillar,
+            image: greenwall,
             title: "Next Generation Plant Monitoring",
             description:
               "Building atop our previous units deployed across the UK, we are now working on a next generation monitoring system.",
-            link: "/projects/nextgen",
+            link: "/projects/plant-monitoring",
           },
           {
             image: car,

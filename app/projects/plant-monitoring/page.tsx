@@ -2,14 +2,14 @@ import React from "react";
 import HeroFeatures from "../../../components/HeroFeatures";
 import Cta from "../../../components/Cta";
 import FeaturesZigzag from "../../../components/FeaturesZigzag";
-import network from "../../../images/projects/nextgen/network.jpeg";
-import security from "../../../images/projects/nextgen/security.jpeg";
-import updates from "../../../images/projects/nextgen/updates.jpeg";
-import watering from "../../../images/projects/nextgen/watering.jpeg";
-import meshd from "../../../images/projects/nextgen/mesh.jpeg";
-import solar from "../../../images/projects/nextgen/solar.jpeg";
-import greenwall from "../../../images/projects/nextgen/greenwall.jpeg";
-import dashboard from "../../../images/projects/nextgen/dashboard-dark.jpg";
+import network from "../../../images/projects/plant-monitoring/network.jpeg";
+import security from "../../../images/projects/plant-monitoring/security.jpeg";
+import updates from "../../../images/projects/plant-monitoring/updates.jpeg";
+import watering from "../../../images/projects/plant-monitoring/watering.jpeg";
+import meshd from "../../../images/projects/plant-monitoring/mesh.jpeg";
+import solar from "../../../images/projects/plant-monitoring/solar.jpeg";
+import greenwall from "../../../images/projects/plant-monitoring/greenwall.jpeg";
+import dashboard from "../../../images/projects/plant-monitoring/dashboard-dark.jpg";
 
 
 import type { Metadata } from "next";
